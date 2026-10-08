@@ -12,8 +12,6 @@ Date(int d,int m,int y){
 
 }
 
-
-
 public String toString(){
      return String.format("%d"-"%m"-"%y",d,m,y);
 }
