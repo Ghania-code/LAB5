@@ -15,11 +15,12 @@ P3.displayProduct();
 
 
 
-Product P4=new Product("Haseeb",2000.0,6);
+Product P4=new Product("Haseeb",2000.0,6,new Date(8,10,2026));
 System.out.println("Information of Fourth object");
 P4.displayProduct();
 
 Product.displayMaxMin();
+
 
 
 

@@ -8,10 +8,15 @@ static private double maxPrice=0;
 static private double minPrice=Double.MAX_VALUE;
 
 Product(String name,double price,int qty){
-	this.name=name;
+	this(name,price,quantity,new Date(1,1,1));
+}
+
+Product(String name,double price, int quantity, Date md){
+    this.name=name;
 	this.price=price;
 	this.ID="P"+String.format("%03d",count++);
 	this.qty=qty;
+        this.md=md;
 
 	if(price>maxPrice){
 		maxPrice=price;
@@ -27,6 +32,7 @@ public void displayProduct(){
 	System.out.println("Price:"+price);
 	System.out.println("quantity:"+qty);
 	System.out.println("ID:"+ID);
+        System.out.println("Manufacturing date:%d \n",md);
 }
 
 static void displayMaxMin(){
