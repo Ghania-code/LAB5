@@ -1,21 +1,13 @@
 public class Demo1{
-    public static void main(String args[]) {
-        Product1 P1 = new Product1("Sumavia", 4200.0, 2);
-        System.out.println("Information of first object:");
-        P1.displayProduct();
+ public static void main(String args[]){
+    New P1=new New("Keyboard",35.00,4);
+    P1.displayNew();
+    New P2=new New("mouse",6500.0,3);
+    P2.displayNew();
+    New P3=new New("Monitor",4400.00,2);
+    P3.displayNew();
+    
+    New.displayMaxMin();
 
-        Product1 P2 = new Product1("Shazeena", 4500.0, 3);
-        System.out.println("Information of second object:");
-        P2.displayProduct();
-
-        Product1 P3 = new Product1("Sohaib", 9000.0, 7);
-        System.out.println("Information of Third object:");
-        P3.displayProduct();
-
-        Product1 P4 = new Product1("Haseeb", 2000.0, 6);
-        System.out.println("Information of Fourth object:");
-        P4.displayProduct();
-
-        Product1.displayMaxMin();
-    }
+ }
 }
